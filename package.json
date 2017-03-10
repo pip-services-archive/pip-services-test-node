@@ -1,0 +1,43 @@
+{
+    "name": "pip-services-test-node",
+    "version": "1.0.1",
+    "author": "Digital Living Software Corp. <www.digitallivingsoftware.com>",
+    "description": "Testing framework for Pip.Services in Node.js",
+    "contributors": [
+        {
+            "name": "Sergey Seroukhov",
+            "email": "seroukhov@gmail.com"
+        }
+    ],
+    "main": "./index.js",
+    "keywords": [
+        "pip.services",
+        "framework",
+        "test"
+    ],
+    "noAnalyze": true,
+    "repository" : {
+        "type": "git",
+        "url": "git@github.com:pip-services/pip-services-test-node.git"
+    },
+    "license": "MIT",
+    "engines": {
+        "node": ">=0.6.14"
+    },
+    "private": false,
+    "scripts": {
+        "start": "node app",
+        "test": "mocha -t 5000 -R spec -u tdd --recursive ./test",
+        "benchmark": "matcha -R clean -I tdd ./benchmark/run.js"
+    },
+    "dependencies": {
+        "lodash": "*",
+        "async": "*",
+        "mocha": "*",
+        "chai": "*",
+        "chance": "*",
+        "matcha": "*"
+    },
+    "devDependencies": {
+    }
+}
